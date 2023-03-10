@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,400;1,100&family=Golos+Text:wght@500&family=Open+Sans:wght@500;600;700&family=Poppins:wght@300;500;600&family=Quicksand:wght@300&family=Roboto:wght@400;700&family=Tilt+Neon&display=swap');
+body{
+    margin: 0;
+    outline: none;
+    font-family: "Open Sans";
+    background-color: #3a4750;
+    color: white;
+    /* background-image: url("SL-121019-25870-23.jpg"); */
+    background-size: cover;
+}
+p{
+    font-size: 15px;
+}
+h1{
+    padding: 40px;
+    font-size: 1.5rem;
+}
+span{
+    color: yellow;
+}
+button{
+    margin: 0 10px;
+    font-size: 1rem;
+    padding: 5px 20px;
+}
+#fav:active{
+    scale: 1.01;
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    /* background-color: #3a4750; */
+    /* border: 2px solid white; */
+}
+
+.movie-block{
+    padding: 40px 0;
+    background-color: #3a4750;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 70%;
+    height: auto;
+    box-shadow: 10px 10px 25px rgba(0,0,0,.25),-5px -5px 25px rgba(255,255,255,.25);
+    border: 2px solid rgb(204, 238, 10);
+}
+.movie-block img{
+    width: 200px;
+    border: 4px solid white;
+}
+h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+.deatils{
+    width: 500px;
+}
+.deatils span{
+    font-size: 12px;
+    padding: 4px;
+    background-color: midnightblue;
+    margin-right:10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+@media screen and (max-width:1000px) {
+    .movie-block{
+        position: relative;
+        top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        gap: 20px;
+        font-size: .5rem;
+    }
+    .movie-block img{
+        margin: 0 auto;
+    }
+    .deatils{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
